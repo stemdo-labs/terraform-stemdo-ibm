@@ -16,7 +16,7 @@ jobs:
 
     - name: Authenticate to IBM Cloud
       run: |
-        ibmcloud login --apikey ${{ secrets.IBM_CLOUD_API_KEY }} -r us-south
+        ibmcloud login --apikey ${{ secrets.IBM_CLOUD_API_KEY }} -r eu-es
         ibmcloud target -g Default
       env:
         IBM_CLOUD_API_KEY: ${{ secrets.IBM_CLOUD_API_KEY }}
