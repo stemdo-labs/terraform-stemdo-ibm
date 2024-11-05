@@ -14,6 +14,10 @@ jobs:
     - name: Set up Terraform
       uses: hashicorp/setup-terraform@v1
 
+    - name: Install IBM Cloud CLI
+      run: |
+        curl -fsSL https://clis.cloud.ibm.com/install/linux | sh
+
     - name: Authenticate to IBM Cloud
       run: |
         ibmcloud login --apikey ${{ secrets.IBM_CLOUD_API_KEY }} -r eu-es
