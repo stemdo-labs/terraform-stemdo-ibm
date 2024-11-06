@@ -1,3 +1,5 @@
+[IBM Schematics CLI Documentation](https://cloud.ibm.com/docs/schematics?topic=schematics-schematics-cli-reference)
+
 ### Listar los workspace de Schematics
 ```
 $ibmcloud schematics workspace list
