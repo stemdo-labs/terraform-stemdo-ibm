@@ -8,6 +8,14 @@ resource "ibm_is_vpc" "vpc" {
   resource_group = "4364ced224cf420fa07d8bf70a8d70df"
 }
 
+resource "ibm_is_subnet" "subnet" {
+  name              = "subnet-1"
+  vpc               = ibm_is_vpc.vpc.id
+  zone              = "uksouth"
+  ipv4_cidr_block   = "10.10.0.0/24"  # Cambia el rango de IP si es necesario
+  resource_group    = "4364ced224cf420fa07d8bf70a8d70df"
+}
+
 # resource "ibm_is_security_group" "sg1" {
 #   name = "${local.BASENAME}-sg1"
 #   vpc  = ibm_is_vpc.vpc.id
