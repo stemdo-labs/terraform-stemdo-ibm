@@ -3,7 +3,7 @@ data "ibm_resource_group" "resource_group" {
 }
 
 resource "ibm_is_vpc" "vpc" {
-  name = "Stemdo_Sandbox_vpc"
+  name = "StemdoSandboxvpc"
   # resource_group = "4364ced224cf420fa07d8bf70a8d70df"
   resource_group = data.ibm_resource_group.resource_group.id
 }
