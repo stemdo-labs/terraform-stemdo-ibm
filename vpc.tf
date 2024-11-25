@@ -26,5 +26,4 @@ resource "ibm_is_subnet" "subnet" {
   zone              = "eu-es-1"
   ipv4_cidr_block = "10.0.1.0/24"
   resource_group = data.ibm_resource_group.resource_group.id
-  routing_table   = ibm_is_vpc_routing_table.example.routing_table
 }
