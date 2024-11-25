@@ -1,4 +1,4 @@
-resource "ibm_container_cluster" "example_openshift" {
+resource "ibm_container_vpc_cluster" "example_openshift" {
   name                = "stemdo_os_cluster"
   kube_version        = "4.16.19_openshift"                         # Especifica la versión de OpenShift
   # hardware          = "shared"                                    # Usar nodos dedicados (dedicated) o compartidos (shared)
