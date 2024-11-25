@@ -28,6 +28,7 @@ r006-ed3f775f-ad7e-4e37-ae62-7199b4988b00   ibm-ubuntu-18-04-1-minimal-amd64-2
 
 
 
+
 ## `terraform.tfvars`
 
 TerraForm Example on IBM Cloud - GEN 2
