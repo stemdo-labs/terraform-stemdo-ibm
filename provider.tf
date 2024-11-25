@@ -1,6 +1,6 @@
 provider "ibm" {
   # ibmcloud_api_key = var.ibmcloud_api_key # comment out and remove variable for schematics runs
-  region           = "eu-es-1"
+  region           = "eu-es"
   ibmcloud_timeout = 60
 }
 
