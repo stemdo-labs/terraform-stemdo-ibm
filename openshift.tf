@@ -12,7 +12,7 @@ resource "ibm_container_vpc_cluster" "example_openshift" {
   # hardware          = "shared"                                    # Usar nodos dedicados (dedicated) o compartidos (shared)
   # worker_pool_name  = "default"
   worker_count        = "3"                                         # Número de nodos trabajadores
-  flavor              = "bx2.4x16"                                  # Tipo de máquina de los nodos
+  flavor              = "mx2.4x32"                                  # Tipo de máquina de los nodos
   # zone              = "eu-es-2"                                   # Zona donde se creará el clúster
   vpc_id              = ibm_is_vpc.vpc.id                           # ID de la VPC
   # subnet_ids        = [ibm_is_subnet.subnet.id]                   # Subnet de la VPC
