@@ -20,9 +20,9 @@ resource "ibm_iam_access_group" "Stemdo_TEST" {
 resource "ibm_iam_access_group_policy" "KubernetesPolicy" {
   access_group_id = ibm_iam_access_group.Stemdo_TEST.id
   roles           = ["Editor","Viewer","Manager","Operator"]
+  
 
   resources {
     service = "containers-kubernetes"
-    region  = "eu-es"
   }
 }
