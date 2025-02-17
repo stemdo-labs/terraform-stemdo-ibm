@@ -38,4 +38,5 @@ resource "ibm_iam_access_group_policy" "KubernetesPolicy" {
     service = "container-registry"
     resource_group_id = var.resource_group
   }
+  depends_on = [ ibm_iam_access_group_policy.TestPolicy ]
 }
