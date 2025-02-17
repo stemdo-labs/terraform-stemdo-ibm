@@ -23,7 +23,7 @@ resource "ibm_iam_access_group_policy" "KubernetesPolicy" {
   
 
   resources {
-    service = "containers-kubernetes"
+    service = "cloud-object-storage"
     resource_group_id = var.resource_group
   }
 }
