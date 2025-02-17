@@ -22,7 +22,7 @@ resource "ibm_iam_access_group_policy" "KubernetesPolicy" {
   roles           = ["Editor","Viewer","Manager","Operator"]
 
   resources {
-    service = "cloud-object-storage"
+    service = "containers-kubernetes"
     region  = "eu-es"
   }
 }
