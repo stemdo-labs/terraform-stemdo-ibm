@@ -26,19 +26,19 @@ Este documento contiene los pasos necesarios para conectarse al clúster de IBM 
 - Ejecutar el comando `ibmcloud oc cluster ls`
 - Copiar el campo `ID`
 
-    ![alt text](image-2.png)
+    ![alt text](img/image-2.png)
 
 ## 3. Obtener la configuración del clúster
 - Descargamos la configuración con `ibmcloud oc cluster config -c <ID_CLÚSTER> `
 
-    ![alt text](image-3.png)
+    ![alt text](img/image-3.png)
 
 
 ## 4. Iniciar sesión en el clúster de OpenShift
 
 - Iniciamos sesión con `oc login -u apikey -p <API_KEY>`
 
-![alt text](image-5.png)
+![alt text](img/image-5.png)
 
 
 
